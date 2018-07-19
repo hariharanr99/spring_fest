@@ -1,0 +1,326 @@
+body {
+	font-family: 'Shadows Into Light', cursive;
+	margin: 0;
+    background-size:cover;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+#logo {
+	position: absolute;
+	top: 0.17vw;
+	left: 5vw;
+	max-height: 3.5vw;
+	align-content: left;
+}
+
+#toplinks {
+	background-color: rgba(7,0,0,0.7);
+	width: 100%;
+	height: 4vw;
+}
+
+@media only screen and (min-width: 601px) {
+
+ul {
+    list-style-type: none;
+    margin: auto;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.1vw;
+    float: right;
+}
+
+li {
+	float: left;
+	display: inline-block;
+}
+
+li a {
+	color: #e60000;
+	display: block;
+    font-weight: bold;
+    padding: 1.2vw 3vw;
+    text-decoration: none;
+}
+
+}
+
+li a:hover {
+    background-color: rgba(0,0,0,0.25);
+    transform: rotateY(180deg) scale(-1, 1);
+    transition-duration: 1s;
+}
+
+.active {
+	color: #ff0000;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#border {
+	border-radius: 2vw;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 8.5vw;
+	left: 10vw;
+	right: 10vw;
+}
+
+.line {
+	border-radius: 0.5vw;
+	height: 0.25vw;
+	width: 22vw;
+	background-color: white;
+}
+
+#left {
+	position: absolute;
+	top:5vw;
+	left: 2.5vw;
+}
+
+#right {
+	position: absolute;
+	top: 5vw;
+	right:2.5vw;
+}
+
+#heading {
+	margin: auto;
+	padding-top: 1vw;
+	width:50vw;
+	text-align: center;
+	font-size: 5vw;
+	color: white;
+}
+
+.content {
+	color: white;
+	font-size: 2.2vw;
+	padding: 0vw 3vw;
+	text-align: center;
+	animation-name: hometext;
+    animation-duration: 1s;
+}
+
+#down {
+	background-color: none;
+	height: 4vw;
+	width: 100%;
+	position: absolute;
+	top:43vw;
+}
+
+.button {
+	display: none;
+}
+
+@keyframes hometext {
+    0% {opacity: 0}
+    50% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 35vw }
+}
+
+@media only screen and (max-width: 800px) {
+	#toplinks {
+		position: absolute;
+		top:10vw;
+		height: 8vw; /*Changed*/
+	}
+
+	.button {
+		display: none;
+	}
+
+	#l2 {
+		position: absolute;
+		top: 0;
+		background-color: rgba(7,0,0,0.7);
+		width: 100%;
+		height: 10vw;
+	}
+
+	#logo {
+		position: absolute;
+		top: 0.1vw;
+		left: 35vw;
+		right: 35vw;
+		max-height: 10vw;
+		align-content: left;
+	}
+
+	ul {
+		list-style-type: none;
+    	margin: auto;
+    	font-family: 'Noto Sans', sans-serif;
+    	font-size: 3vw;
+    	text-align: center;
+    	float: none;
+	}
+
+	li {
+		display: inline-block;
+		float: none;
+	}
+	
+	li a {
+		color: #e60000;
+		display: block;
+    	font-weight: none;
+    	padding: 2vw 3vw;
+    	text-decoration: none;
+	}
+
+	.active {
+		color: #ff0000;
+		background-color: rgba(255,255,255,0);
+	}
+
+	#border {
+		top: 25vw; /*Changed*/
+		left: 7vw; /*Changed*/
+		right: 7vw; /*Changed*/
+	}
+
+	.line {
+		width: 0vw;
+	}
+
+	#heading {
+		width: none; /*Warning*/
+		font-size: 14vw; /*Changed*/
+		border-bottom: 0.7vw solid white; /*Changed*/
+		border-radius: 0.35vw; /*Changed*/
+		width: 90%; /*Changed*/
+	}
+
+	.content {
+		font-size: 5vw; /*Changed*/
+		padding: 7vw 7vw; /*Changed*/
+		text-align: left;
+	}
+
+	#down {
+		height: 10vw; /*Changed*/
+		top: 185vw; /*Changed*/
+	}	
+
+}
+	
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+
+	.button {
+		display: block;
+		position: absolute;
+		top: 3.5vw;
+		right: 6vw;
+		border: 0;
+		max-height: 10vw;
+	}
+
+	.button:focus {
+		outline: none;
+	}
+
+	#button 1 {
+		display: block;
+	}
+
+	#button2 {
+		display: none;
+	}
+
+	#toplinks {
+		z-index: +1;
+		position: absolute;
+		top:17vw;
+		background-color: rgba(7,0,0,0.8);
+		display: none;
+		height: 52vw;
+	}
+
+	#l2 {
+		position: absolute;
+		top: 0;
+		background-color: rgba(7,0,0,0.7);
+		width: 100%;
+		height: 17vw;
+	}
+
+	#logo {
+		position: absolute;
+		top: 0.25vw;
+		left: 6vw;
+		right: 35vw;
+		max-height: 15vw;
+		align-content: left;
+	}
+
+	
+	ul {
+		list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    	width: 100%;
+	    background-color: none;
+    	position: absolute;
+    	font-family: 'Noto Sans', sans-serif;
+    	font-size: 5vw;
+	}
+
+	li {
+		width: 100vw;
+	}
+
+	li a {
+	    display: block;
+	    color: #e60000;
+	    padding: 3vw 0vw;
+	    text-decoration: none;
+	    font-weight: bold;
+	}
+
+	.active {
+		color: #e60000;
+		background-color: rgba(0,0,0,0.3);
+	}
+
+	#border {
+		top: 25vw; /*Changed*/
+		left: 7vw; /*Changed*/
+		right: 7vw; /*Changed*/
+	}
+
+	.line {
+		width: 0vw;
+	}
+
+	#heading {
+		width: none;
+		font-size: 15vw; /*Changed*/
+		border-bottom: 0.7vw solid white; /*Changed*/
+		border-radius: 0.35vw; /*Changed*/
+		width: 90%; /*Changed*/
+	}
+
+	.content {
+		font-size: 7vw; /*Changed*/
+		padding: 7vw 7vw; /*Changed*/
+		text-align: left;
+	}
+
+	#down {
+		height: 10vw; /*Changed*/
+		top: 268vw; /*Changed*/
+	}	
+
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+	
+}

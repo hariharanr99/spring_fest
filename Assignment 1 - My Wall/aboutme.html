@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+  	
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+
+	<link rel="shortcut icon" type="image/x-icon" href="./Icons/favicon.png" />
+
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Shadows+Into+Light|Noto+Sans" rel="stylesheet">
+
+	<style type="text/css">
+
+		body {
+			background-image: url(./Background/bgaboutme.jpg);
+		}
+
+		#border {
+			min-height: 32vw;
+		}
+
+		#down {
+			height: 1vw;
+		}
+
+		@media screen and (max-width: 800px) {
+			body {
+				background-image: url(./Background/bgaboutme2.jpg);
+			}
+
+			#down {
+				top: 167vw;
+				height: 10vw;
+			}
+		}
+
+		@media screen and (max-width: 600px) {
+			#down {
+				height: 10vw;
+				top: 268vw;
+			}
+		}
+
+		@media screen and (max-width: 800px) and (orientation: landscape){
+			body {
+				background-position: center left;
+			}
+		}
+		
+	</style>
+
+	<title>
+		About Me
+	</title>
+
+</head>
+
+<body>
+
+	<div id="toplinks">
+		<ul>
+			<li> <a href="index.html">HOME</a> </li>
+			<li> <a href="aboutme.html" class="active">ABOUT ME</a> </li>
+			<li> <a href="interests.html">INTERESTS</a> </li>
+			<li> <a href="contact.html">CONTACT ME</a> </li>
+		</ul>
+	</div>
+
+	<div id="l2"><a href="index.html"><img src="./Icons/harismall.png" id="logo"></a></div>
+
+	<input type="image" src="./Icons/link.png" name="navbar" id="button1" class="button" onclick="document.getElementById('toplinks').style.display='block' ; document.getElementById('button1').style.display='none' ; document.getElementById('button2').style.display='block' ; document.getElementById('border').style.top='77vw'"/>
+
+	<input type="image" src="./Icons/link.png" name="navbar" id="button2" class="button" onclick="document.getElementById('toplinks').style.display='none' ; document.getElementById('button1').style.display='block' ; document.getElementById('button2').style.display='none' ; document.getElementById('border').style.top='25vw'"/>
+
+	<div id="border">
+
+		<div id="heading">
+			<div class="line" id="left">
+
+			</div>
+
+			<div class="line" id="right">
+
+			</div>
+
+			About Me
+		</div>
+
+		<div class="content">
+			Hello.. I'm Hariharan. <br />
+			I am a first-year undergraduate student of the Department of Aerospace Engineering at Indian Institute of Technology, Kharagpur.
+			<br /> I am a Junior Associate at International Relations Cell, IIT Kharagpur. <br />
+			I am from Chennai. I did my schooling at Dayananda Anglo Vedic School, Adambakkam till class 10 and then at Maharishi Vidya Mandir, Chetpet for classes 11 and 12. <br />
+		</div>
+
+	</div>
+
+	<div id="down">
+
+	</div>
+
+</body>
+
+</html>

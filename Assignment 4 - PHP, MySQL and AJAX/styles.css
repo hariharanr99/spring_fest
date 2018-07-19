@@ -1,0 +1,124 @@
+body {
+	margin: 0;
+    background-size:cover;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url('bg.jpg');
+	overflow: hidden;
+}
+
+form {
+	background-color: white;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+
+label {
+	position: absolute;
+	margin-bottom: 1vw;
+	font-family: 'Roboto', sans-serif;
+	color: rgba(0,0,0,0.77);
+	left: 3.5vw;
+	font-size: 1vw;
+	margin-bottom: 2vw;
+}
+
+.textbox {
+	border-width: 0;
+	border-bottom: 0.2vw solid rgba(0,0,0,0.25);
+	max-width: 85%;
+	width: 75%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 4vw;
+	background-color: rgba(255,255,255,0);
+	padding: 0.2vw 0.5vw;
+	margin-top: 1vw;
+	font-size: 1vw;
+	border-bottom-width: 0.2vh;
+	margin-bottom: 5vh;
+}
+
+.textbox:focus {
+	outline: none;
+	border-bottom: 0.6vw solid  #ff3300;
+	animation: underline;
+	animation-duration: 0.3s;
+	color: black;
+	border-bottom-width: 0.3vh;
+}
+
+.head {
+	color:  #ff3300;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.7vw;
+	width: 23vw;
+	position: absolute;
+	top: 7.5vh;
+}
+
+a {
+	text-decoration: none;
+	color:  #ff3300;
+}
+
+button {
+	color: white;
+	background-color:  #ff3300;
+	border-width: 0;
+	border-radius: 0.7vw;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	height: 2.25vw;
+	min-width: 5.625vw;
+	font-size: 0.8vw;
+	font-weight: bold;
+	border-radius: 0.35vw;
+}
+
+.radio:focus {
+	outline: none;
+}
+
+option
+{
+    color: #000;
+}
+option:first-child
+{
+    color: grey;
+}
+
+@keyframes underline {
+    from {width: 0;}
+    to {width: max-width;}
+}
+
+.page {
+	position: absolute;
+	top: 12%;
+	left: 35%;
+	width: 30%;
+	height: 75%;
+	background-color: white;
+	box-shadow: 0 0.1vw 1vw 0 rgba(0, 0, 0, 0.2), 0 1vw 5vw 0 rgba(0, 0, 0, 0.2);
+}
+
+.checkbox {
+	height: 1vw;
+	width: 1vw;
+}
+
+.radio {
+	transform: scale(1);
+}
+
+#invalidpass {
+	width: 30vw;
+	font-size: 1vw;
+	color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-family: 'Roboto', sans-serif;
+}

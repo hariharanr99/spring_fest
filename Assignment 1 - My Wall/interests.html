@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+  	
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+
+	<link rel="shortcut icon" type="image/x-icon" href="./Icons/favicon.png" />
+
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Shadows+Into+Light|Noto+Sans" rel="stylesheet">
+
+	<style type="text/css">
+
+		body {
+			background-image: url(./Background/bginterests.jpg);
+		}
+
+		#border {
+			min-height: 35vw;
+		}
+
+		.content {
+			text-align: left;
+			padding-top: 0;
+		}
+
+		span {
+			color: #cc0000;
+		}
+
+		@media screen and (max-width: 800px) {
+			body {
+				background-image: url(./Background/bginterests2.jpg);
+			}
+			.content {
+				padding-top: 5vw;
+			}
+
+			#down {
+				top: 165vw;
+			}
+		}
+
+		@media screen and (max-width: 600px) {
+			#down {
+				top: 267vw;
+			}
+		}
+
+		@media screen and (max-width: 800px) and (orientation: landscape){
+			body {
+				background-position: center left;
+			}
+		}
+
+	</style>
+
+	<title>
+		Interests
+	</title>
+
+</head>
+
+<body>
+
+	<div id="toplinks">
+		<ul>
+			<li> <a href="index.html">HOME</a> </li>
+			<li> <a href="aboutme.html">ABOUT ME</a> </li>
+			<li> <a href="interests.html" class="active">INTERESTS</a> </li>
+			<li> <a href="contact.html">CONTACT ME</a> </li>
+		</ul>
+	</div>
+
+	<div id="l2"><a href="index.html"><img src="./Icons/harismall.png" id="logo"></a></div>
+
+	<input type="image" src="./Icons/link.png" name="navbar" id="button1" class="button" onclick="document.getElementById('toplinks').style.display='block' ; document.getElementById('button1').style.display='none' ; document.getElementById('button2').style.display='block' ; document.getElementById('border').style.top='77vw'"/>
+
+	<input type="image" src="./Icons/link.png" name="navbar" id="button2" class="button" onclick="document.getElementById('toplinks').style.display='none' ; document.getElementById('button1').style.display='block' ; document.getElementById('button2').style.display='none' ; document.getElementById('border').style.top='25vw'"/>
+
+	<div id="border">
+
+		<div id="heading">
+			<div class="line" id="left">
+
+			</div>
+
+			<div class="line" id="right">
+
+			</div>
+
+			My Interests
+
+		</div>
+
+		<div class="content">
+			I play <span>Basketball</span>. I love the pace of the game. My favourite player is LeBron James. I was included in LBS Hall Basketball Team.
+			<br />
+			I play <span>Piano</span>. It heals my heart when I play it. My favourite piano piece is 'Primavera' by Ludovico Einaudi.
+			<br />
+			I love <span>Cricket</span>. My favourite is Sachin Tendulkar. Don't ask for a current player. <br />
+			I listen to a lot of <span>Music</span>... I mean a lot.<br />
+			I love the color <span>Red</span>. That's why you find many red texts in this website.
+		</div>
+
+	</div>
+
+	<div id="down">
+
+	</div>
+
+</body>
+
+</html>

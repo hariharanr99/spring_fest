@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+  	
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" type="image/x-icon" href="./Icons/favicon.png" />
+
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Shadows+Into+Light|Noto+Sans" rel="stylesheet">
+
+	<style type="text/css">
+
+		body {
+			background-image: url(./Background/bghome.jpeg);
+			background-position: top right;
+		}
+
+		#name {
+			max-height: 35vw;
+			position: absolute;
+			left: 15vw;
+			top: 9vw;
+			animation-name: hometext;
+    		animation-duration: 4s;
+		}
+
+		#toplinks {
+			background-color: rgba(255,255,255,0);
+		}
+
+		#introhead {
+			position: absolute;
+			top: 0.2vw;
+			font-size: 11vw;
+			padding-left: 10.5vw;
+			color: rgba(0,0,0,0.7);
+			overflow: hidden;
+			white-space: nowrap;
+			animation: typing 2s steps(100, end);
+		}
+
+		li a:hover {
+ 		   background-color: #cc0000;
+ 		   color: white;
+		}
+
+		.active {
+			background-color: rgba(255,255,255,0);
+		}
+
+		@media screen and (max-width: 800px) {
+			#name {
+				max-height: 37vw;
+				position: absolute;
+				left: 28vw;
+				top: 20vw;
+			}
+
+			#introhead {
+				position: absolute;
+				top: 5vw;
+				font-size: 17vw;
+				padding-left: 13vw;
+				color: rgba(0,0,0,0.7);
+			}
+
+			body {
+				background-image: url(./Background/bghome2.jpg);
+			}
+
+			.button {
+				display: block;
+				position: absolute;
+				top: 3.5vw;
+				right: 6vw;
+				border: 0;
+				max-height: 6vw;
+			}
+
+			.button:focus {
+				outline: none;
+			}
+
+			#button 1 {
+				display: block;
+			}
+
+			#button2 {
+				display: none;
+				z-index: +1;
+			}
+
+			#toplinks {
+				z-index: +1;
+				position: absolute;
+				top:0vw;
+				background-color: rgba(7,0,0,0.9);
+				display: none;
+				height: 56vw;
+			}
+
+			#l2 {
+				position: absolute;
+				top: 0;
+				background-color: rgba(7,0,0,0.7);
+				width: 100%;
+				height: 19vw;
+			}
+
+			#logo {
+				position: absolute;
+				top: 0.1vw;
+				left: 6vw;
+				right: 35vw;
+				max-height: 17vw;
+				align-content: left;
+			}
+
+			ul {
+				list-style-type: none;
+    			margin: 0;
+    			padding: 0;
+    			width: 100%;
+	    		background-color: none;
+    			position: absolute;
+    			top: 15vw;
+    			font-family: 'Noto Sans', sans-serif;
+    			font-size: 3vw;
+			}
+
+			li {
+				width: 100vw;
+			}
+
+			li a {
+	    		display: block;
+	    		color: #e60000;
+	    		padding: 3vw 0vw;
+	    		text-decoration: none;
+	    		font-weight: bold;
+			}
+
+			.active {
+				color: #e60000;
+				background-color: rgba(0,0,0,0.3);
+			}
+			
+		}
+
+		@media screen and (max-width: 600px) {
+			body {
+				background-image: url(./Background/bghome2.jpg);
+			}
+
+			#name {
+				max-height: 40vw;
+				position: absolute;
+				left: 27vw;
+				top: 17vw;
+			}
+
+			#introhead {
+				position: absolute;
+				top: 3vw;
+				font-size: 17vw;
+				padding-left: 13vw;
+				color: rgba(0,0,0,0.7);
+			}
+
+			#button {
+				max-height: 10vw;
+			}
+			
+		}
+
+		@media screen and (max-width: 800px) and (orientation: landscape){
+			body {
+				background-image: url(./Background/bghome.jpeg);
+				background-position: top right;
+			}
+		}
+
+	</style>
+
+	<title>
+		Hariharan - Home
+	</title>
+
+</head>
+
+<body>
+
+	<div id="toplinks">
+		<ul>
+			<li> <a href="index.html" class="active">HOME</a> </li>
+			<li> <a href="aboutme.html">ABOUT ME</a> </li>
+			<li> <a href="interests.html">INTERESTS</a> </li>
+			<li> <a href="contact.html">CONTACT ME</a> </li>
+		</ul>
+	</div>
+
+	<img src="./Icons/hariharan.png" id="name">
+
+	<input type="image" src="./Icons/link.png" name="navbar" id="button1" class="button" onclick="document.getElementById('toplinks').style.display='block' ; document.getElementById('button1').style.display='none' ; document.getElementById('button2').style.display='block'"/>
+
+	<input type="image" src="./Icons/link.png" name="navbar" id="button2" class="button" onclick="document.getElementById('toplinks').style.display='none' ; document.getElementById('button1').style.display='block' ; document.getElementById('button2').style.display='none' "/>
+
+	<div id="introhead">
+		Hello.. I'm
+	</div>
+
+</body>
+
+</html>

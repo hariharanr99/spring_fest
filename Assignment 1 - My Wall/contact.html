@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+  	
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+
+	<link rel="shortcut icon" type="image/x-icon" href="./Icons/favicon.png" />
+
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Shadows+Into+Light|Noto+Sans" rel="stylesheet">
+
+	<style type="text/css">
+
+		body {
+			background-image: url(./Background/bgcontact.jpg);
+		}
+
+		#border {
+			min-height: 35.5vw;
+		}
+
+		.line {
+			width: 15vw;
+		}
+
+		#homepic {
+			position: absolute;
+			top: 10.5vw;
+			left: 3vw;
+		}
+
+		#email {
+			position: absolute;
+			top: 19.5vw;
+			left: 3vw;
+		}
+
+		#phone {
+			position: absolute;
+			top: 25.5vw;
+			left: 3vw;
+		}
+
+		#details1 {
+			position: absolute;
+			top: 10vw;
+			left: 7vw;
+			font-size: 1.85vw;
+			color: white;
+		}
+
+		#details2 {
+			position: absolute;
+			font-size: 0vw;
+			color: white;
+		}
+
+		#social {
+			position: absolute;
+			top:29.5vw;
+			left: 7vw;
+			word-spacing: 10vw;
+		}
+
+		.socicons {
+			max-height: 2vw;
+		}
+
+		#map1 {
+			position: absolute;
+			top: 10vw;
+			right: 4vw;
+			max-height: 21.5vw;
+			max-width: 38vw;
+			border-radius: 0.5vw;
+		}
+
+		#map2 {
+			position: absolute;
+			max-height: 0vw;
+		}
+
+		.v1 {
+			font-size: 5vw;
+		}
+
+		.v2 {
+			font-size: 0vw;
+		}
+
+		@media screen and (max-width: 800px) {
+			body {
+				background-image: url(./Background/bgcontact2.jpg);
+			}
+			#border {
+				min-height: 160vw; /*Changed*/
+			}
+			#homepic {
+				top: 31.5vw; /*Changed*/
+				left: 10vw; /*Changed*/
+				max-height: 5vw;
+			}
+
+			#email {
+				top: 64vw;
+				left: 10vw; /*Changed*/
+				max-height: 5vw;
+			}
+
+			#phone {
+				top: 80vw;
+				left: 10vw; /*Changed*/
+				max-height: 5vw;
+			}
+
+			#social {
+				top: 93vw; /*Changed*/
+				left: 10vw; /*Changed*/
+				word-spacing: 23vw; /*Changed*/
+			}
+
+			.socicons {
+				max-height: 7vw; /*Changed*/
+			}
+
+			#map1 {
+				display: none; /*Changed*/
+			}
+
+			#map2 {
+				position: absolute;
+				top: 107vw;
+				left: 7vw;
+				width: 72vw;
+				max-height: 44vw; /*Changed*/
+				border-radius: 0.5vw;
+			}
+
+			.line {
+				width: 0vw;
+			}
+
+			#details1 {
+				display: none;
+			}
+
+			#details2 {
+				top: 30vw; /*Changed*/
+				left: 20vw; /*Changed*/
+				font-size: 5vw; /*Changed*/
+			}	
+
+			.v1 {
+				display: none;
+			}
+
+			.v2 {
+				font-size: 14vw;
+			}
+		}
+
+		@media screen and (max-width: 600px) {
+			body {
+				background-image: url(./Background/bgcontact2.jpg);
+			}
+			#border {
+				min-height: 172vw; /*Changed*/
+			}
+			#homepic {
+				top: 32.5vw; /*Changed*/
+				left: 7vw; /*Changed*/
+				max-height: 5vw;
+			}
+
+			#email {
+				top: 72vw;
+				left: 7vw; /*Changed*/
+				max-height: 5vw;
+			}
+
+			#phone {
+				top: 91.5vw;
+				left: 7vw; /*Changed*/
+				max-height: 5vw;
+			}
+
+			#social {
+				top: 105vw; /*Changed*/
+				left: 9vw; /*Changed*/
+				word-spacing: 22vw; /*Changed*/
+			}
+
+			.socicons {
+				max-height: 7vw; /*Changed*/
+			}
+
+			#map1 {
+				display: none; /*Changed*/
+			}
+
+			#map2 {
+				position: absolute;
+				top: 121vw;
+				left: 7vw;
+				width: 72vw;
+				max-height: 44vw; /*Changed*/
+				border-radius: 0.5vw;
+			}
+
+			.line {
+				width: 0vw;
+			}
+
+			#details1 {
+				display: none;
+			}
+
+			#details2 {
+				top: 30vw; /*Changed*/
+				left: 17vw; /*Changed*/
+				font-size: 6vw; /*Changed*/
+			}	
+
+			.v1 {
+				display: none;
+			}
+
+			.v2 {
+				font-size: 14vw;
+			}
+
+			#down {
+				top: 197vw;
+			}
+		}
+
+		@media screen and (max-width: 800px) and (orientation: landscape){
+			body {
+				background-position: center left;
+			}
+		}
+		
+	</style>
+
+	<title>
+		Contact
+	</title>
+
+</head>
+
+<body>
+
+	<div id="toplinks">
+		<ul>
+			<li> <a href="index.html">HOME</a> </li>
+			<li> <a href="aboutme.html">ABOUT ME</a> </li>
+			<li> <a href="interests.html">INTERESTS</a> </li>
+			<li> <a href="contact.html" class="active">CONTACT ME</a> </li>
+		</ul>
+	</div>
+
+	<div id="l2"><a href="index.html"><img src="./Icons/harismall.png" id="logo"></a></div>
+
+	<input type="image" src="./Icons/link.png" name="navbar" id="button1" class="button" onclick="document.getElementById('toplinks').style.display='block' ; document.getElementById('button1').style.display='none' ; document.getElementById('button2').style.display='block' ; document.getElementById('border').style.top='77vw'"/>
+
+	<input type="image" src="./Icons/link.png" name="navbar" id="button2" class="button" onclick="document.getElementById('toplinks').style.display='none' ; document.getElementById('button1').style.display='block' ; document.getElementById('button2').style.display='none' ; document.getElementById('border').style.top='25vw'"/>
+
+	<div id="border">
+
+		<div id="heading">
+			<div class="line" id="left">
+
+			</div>
+
+			<div class="line" id="right">
+
+			</div>
+
+			<span class="v1">You can find me at</span> <span class="v2">Contact Me</span>
+
+		</div>
+
+		<img src="./Icons/home.png" id="homepic" class="socicons">
+
+		<img src="./Icons/email.png" id="email" class="socicons">
+
+		<img src="./Icons/phone.png" id="phone" class="socicons">
+
+		<div id="details1">
+			Nehru Hall of Residence, IIT Kharagpur,<br />Kharagpur, West Bengal - 721302 <br /><br />rhari1999@gmail.com<br /><br />+91-9500099224
+
+		</div>
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.8981253584043!2d87.29606776495507!3d22.319692285313458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d43f90ddb280d%3A0xe99574f057554b6f!2sNehru+Hall+of+Residence%2C+Pan+Loop%2C+IIT+Kharagpur%2C+Kharagpur%2C+West+Bengal+721302!5e0!3m2!1sen!2sin!4v1525973429139" width="600" height="450" frameborder="0" style="border:0" allowfullscreen id="map1"></iframe>
+
+		<div id="details2">
+			Nehru Hall of Residence, <br />IIT Kharagpur, Kharagpur, <br />West Bengal - 721302 <br /><br />rhari1999@gmail.com<br /><br />+91-9500099224
+
+		</div>
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.8981253584043!2d87.29606776495507!3d22.319692285313458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1d43f90ddb280d%3A0xe99574f057554b6f!2sNehru+Hall+of+Residence%2C+Pan+Loop%2C+IIT+Kharagpur%2C+Kharagpur%2C+West+Bengal+721302!5e0!3m2!1sen!2sin!4v1525973429139" width="600" height="450" frameborder="0" style="border:0" allowfullscreen id="map2"></iframe>
+
+		<div id="social">
+			<a href="https://www.facebook.com/hariharan.ravichandran.1999" target="_blank"><img src="./Icons/fb.png" id="fb" class="socicons"></a>
+			<a href="https://www.linkedin.com/in/hariharanr1799/" target="_blank"><img src="./Icons/linkedin.png" id="linkedin" class="socicons"></a>
+			<a href="https://www.instagram.com/hariharan1799/" target="_blank"><img src="./Icons/instagram.png" id="insta" class="socicons"></a>
+		</div>
+
+	</div>
+
+	<div id="down">
+
+	</div>
+
+</body>
+
+</html>
